@@ -50,7 +50,7 @@ function App() {
       } else if (privateKey) {
         newItem = { walletName, privateKey: privateKeyValue, id: uuidv4() };
       }
-    } else if (!privateKey || !seedPhrase || walletName) {
+     else if (!privateKey || !seedPhrase || walletName) {
       notify("Missing");
       resetFields();
     }
@@ -59,6 +59,7 @@ function App() {
     saveToLocalStorage(updatedItems);
     notify("Saved"); // Save to local storage
     resetFields();
+  }
   };
 
   const handleDelete = (id) => {
