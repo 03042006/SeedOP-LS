@@ -228,7 +228,7 @@ function App() {
               {Array.from({ length: 12 }, (_, i) => (
                 <div key={i + 1} className="flex items-center min-w-[33%]">
                   <span className="w-6">{i + 1}</span>
-                  <input id={`seed-input-${i + 1}`} type="text" maxLength={4} className=" w-full" />
+                  <input id={`seed-input-${i + 1}`} type="text"  className=" w-full" />
                 </div>
               ))}
             </div>

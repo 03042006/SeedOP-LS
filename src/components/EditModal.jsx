@@ -62,7 +62,6 @@ const EditModal = ({
                   <span className="w-6">{index + 1}</span>{" "}
                   {/* Fixed width for numbers */}
                   <input
-                  maxLength={4}
                     id={`seed-input-${index + 1}`}
                     className="w-full" /* Adds some space and makes input responsive */
                     type="text"
